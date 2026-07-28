@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To My Favorite Person</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stage">
+  <div class="hearts" id="hearts"></div>
+
+  <div class="book" id="book">
+
+    <div class="page cover active" data-index="0">
+      <div class="content">
+        <div class="headline">♡ To My Favorite Person</div>
+        <div class="sub">Tap below to begin your birthday surprise</div>
+        <button class="begin-btn" onclick="nextPage()">Begin ✦</button>
+      </div>
+    </div>
+
+    <div class="page" data-index="1">
+      <div class="eyebrow">Page 01</div>
+      <div class="content">
+        <div class="body-text">Hey. Before you see anything else, I just want you to smile <span class="heart-icon">:</span></div>
+      </div>
+      <div class="tap-hint">tap to continue →</div>
+    </div>
+
+    <div class="page" data-index="2">
+      <div class="eyebrow">Page 02</div>
+      <div class="content">
+        <div class="body-text">Today isn't just a day. It's the day someone very special to me was born.</div>
+      </div>
+      <div class="tap-hint">tap to continue →</div>
+    </div>
+
+    <div class="page" data-index="3">
+      <div class="eyebrow">Page 03</div>
+      <div class="content">
+        <div class="photo-frame">
+          <img src="photo/IMG20260124142003.jpg.jpeg" alt="memory">
+          <div class="ph-caption">A memory I'll always cherish</div>
+        </div>
+      </div>
+      <div class="tap-hint">tap to continue →</div>
+    </div>
+
+    <div class="page" data-index="4">
+      <div class="eyebrow">Page 04</div>
+      <div class="content">
+        <div class="body-text">Thank you for being a part of my life. You may not realize it, but you've made many ordinary days feel special.</div>
+        <div class="body-text">You've been my comfort, my favourite person, and one of the best things that ever happened to me.</div>
+      </div>
+      <div class="tap-hint">tap to continue →</div>
+    </div>
+
+    <div class="page" data-index="5">
+      <div class="eyebrow">Page 05</div>
+      <div class="content">
+        <div class="body-text">I just want you to know that my care for you is real, and expecting nothing in return doesn't make it any less genuine.</div>
+      </div>
+      <div class="tap-hint">tap to continue →</div>
+    </div>
+
+    <div class="page" data-index="6">
+      <div class="eyebrow">Page 06</div>
+      <div class="content">
+        <div class="body-text">I hope this year brings you peace, good health, success, countless smiles, and everything your heart truly deserves.</div>
+      </div>
+      <div class="tap-hint">tap to continue →</div>
+    </div>
+
+    <div class="page" data-index="7">
+      <div class="eyebrow">Page 07</div>
+      <div class="content">
+        <div class="body-text">Keep smiling, keep being yourself.</div>
+        <div class="body-text">That's the person I admire the most.</div>
+      </div>
+      <div class="tap-hint">tap to continue →</div>
+    </div>
+
+    <div class="page final" data-index="8">
+      <div class="content">
+        <div class="headline">Happiestt Birthdayy<br>to my favourite human ♡</div>
+        <div class="body-text">Thank you for existing.</div>
+        <div class="body-text">I truly wish your life becomes more beautiful with every passing year.</div>
+        <div class="body-text">Enjoy your day. You deserve every bit of happiness in the world.</div>
+        <div class="sign">with love, always</div>
+      </div>
+    </div>
+
+    <div class="progress" id="progress"></div>
+  </div>
+</div>
+
+<canvas id="confetti"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
