@@ -4,7 +4,7 @@ function setVH(){
 setVH();
 window.addEventListener('resize', setVH);
 window.addEventListener('orientationchange', setVH);
-const total = 9;
+const total = 10;
 let current = 0;
 const book = document.getElementById('book');
 const progressEl = document.getElementById('progress');
@@ -33,9 +33,9 @@ function nextPage(){
     curEl.classList.remove('leaving');
     nextEl.classList.add('active');
     updateProgress();
-    if(current === total-1){
-      launchConfetti();
-    }
+    if(nextEl.classList.contains('final')){
+  launchConfetti();
+}
   }, 30);
 }
 
