@@ -64,7 +64,7 @@ html,body{
 .book{
   position: relative;
   width: min(420px, 88vw);
-  height: min(600px, 72dvh);
+  height: min(640px, 82dvh);
   max-height: 640px;
 }
 
@@ -317,8 +317,4 @@ html,body{
 }
 @media (max-width: 380px){
   .page{ padding: 36px 26px 26px 36px; }
-}
-
-@supports not (height: 100dvh){
-  .stage{ height: calc(var(--vh, 1vh) * 100); }
 }
