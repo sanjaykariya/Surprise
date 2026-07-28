@@ -1,9 +1,3 @@
-function setVH(){
-  document.documentElement.style.setProperty('--vh', `${window.innerHeight}px`);
-}
-setVH();
-window.addEventListener('resize', setVH);
-window.addEventListener('orientationchange', setVH);
 const total = 10;
 let current = 0;
 const book = document.getElementById('book');
